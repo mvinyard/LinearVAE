@@ -1,5 +1,4 @@
-flexinet
----
+![flexinet-logo](/docs/img/flexinet.logo.svg)
 
 A flexible API for instantiating pytorch neural networks composed of sequential linear layers ([`torch.nn.Linear`](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html#torch.nn.Linear)). Additionally, makes use of other elements within the [`torch.nn`](https://pytorch.org/docs/stable/nn.html) module.
 
