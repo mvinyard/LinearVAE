@@ -1,4 +1,4 @@
-![flexinet-logo](/docs/img/flexinet.logo.svg)
+# ![flexinet-logo](/docs/img/flexinet.logo.svg)
 
 A flexible API for instantiating pytorch neural networks composed of sequential linear layers ([`torch.nn.Linear`](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html#torch.nn.Linear)). Additionally, makes use of other elements within the [`torch.nn`](https://pytorch.org/docs/stable/nn.html) module.
 
@@ -58,6 +58,7 @@ model.train(epochs=10_000, print_frequency=50, lr=1e-4)
 ```python
 model.plot_loss()
 ```
+![loss-plot](https://user-images.githubusercontent.com/47393421/168498723-4b183481-b651-45ba-abf9-72df57a7ee97.png)
 
 ## Contact
 
