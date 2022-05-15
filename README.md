@@ -1,13 +1,13 @@
 flexinet
 ---
 
-Flexible torch neural network API.
+A flexible API for instantiating pytorch neural networks.
 
-Current test implementation: vanilla linear VAE
+## Current test implementation: vanilla linear VAE
 
-[/docs/img/flexinet.LinearVAE.svg]
+<img width="400" alt="FlexiLinearAVE" src="/docs/img/flexinet.LinearVAE.svg">
 
-## Example
+### Example
 
 ```python
 import flexinet as fn
@@ -20,10 +20,25 @@ X_data.keys()
 >`dict_keys(['test', 'valid', 'train'])`
 
 ```python
-model = fn.models.LinearVAE(X_data, latent_dim=20, hidden_layers=5, lr=1e-4)
+model = fn.models.LinearVAE(X_data,
+                            latent_dim=20, 
+                            hidden_layers=5, 
+                            lr=1e-4,
+                            power=2,
+                            dropout=0.1,
+                            activation_function_dict={'LeakyReLU': LeakyReLU(negative_slope=0.01)},
+                            optimizer=torch.optim.Adam
+                            reconstruction_loss_function=torch.nn.BCELoss(),
+                            reparameterization_loss_function=torch.nn.KLDivLoss(),
+                            device="cuda:0",
+                           )
 ```
-<img width="541" alt="Screen Shot 2022-05-15 at 12 38 22 PM" src="https://user-images.githubusercontent.com/47393421/168488664-e7918416-8ae8-4369-a6ef-b73449c42b5f.png">
+<img width="541" alt="from_nb.linear_VAE" src="https://user-images.githubusercontent.com/47393421/168488664-e7918416-8ae8-4369-a6ef-b73449c42b5f.png">
 
 ```python
-model.train(epochs=10_000, print_frequency=25, lr=1e-5)
+model.train(epochs=10_000, print_frequency=50, lr=1e-4)
+```
+
+```python
+model.plot_loss()
 ```
