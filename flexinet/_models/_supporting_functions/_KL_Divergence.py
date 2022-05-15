@@ -1,4 +1,11 @@
 
+__module_name__ = "_KL_Divergence.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages #
+# --------------- #
 import torch
 
 

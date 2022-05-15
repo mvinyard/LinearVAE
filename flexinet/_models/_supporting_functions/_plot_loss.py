@@ -1,3 +1,11 @@
+
+__module_name__ = "_plot_loss.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages #
+# --------------- #
 import matplotlib.pyplot as plt
 import numpy as np
 import vinplots
@@ -16,10 +24,8 @@ def _build_plot():
 def _get_loss_plot_coordinates(training_loss, validation_loss, validation_frequency):
 
     train_x = range(len(training_loss))
-    valid_x = np.arange(
-        model._validation_frequency, len(train_loss), model._validation_frequency
-    )
-
+    valid_x = np.arange(validation_frequency, int(len(training_loss)+1), validation_frequency)
+    
     return train_x, valid_x
 
 

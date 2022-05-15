@@ -1,8 +1,16 @@
 
+__module_name__ = "_LinearVAE.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages #
+# --------------- #
 import torch
 
 
-
+# import local dependencies #
+# ------------------------- #
 from ._supporting_functions._Learner import _Learner
 from ._supporting_functions._utilities import _no_transform
 from ._supporting_functions._training_loop import _training_loop
@@ -13,7 +21,7 @@ from ._supporting_functions._OptimalTransportLoss import _OptimalTransportLoss
 
 from .._utilities._get_device import _get_device
 
-
+from ._supporting_functions._plot_loss import _plot_loss
 
 class _LinearVAE(torch.nn.Module):
     def __init__(
@@ -99,7 +107,7 @@ class _LinearVAE(torch.nn.Module):
             print_frequency,
         )
         
-    def plot(self):
+    def plot_loss(self):
         
         _plot_loss(self._learner._training_loss,
                    self._learner._validation_loss,

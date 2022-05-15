@@ -1,5 +1,12 @@
 
 
+__module_name__ = "_compose_multilayered_nn_sequential.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages #
+# --------------- #
 import torch
 from collections import OrderedDict
 

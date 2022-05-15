@@ -1,7 +1,17 @@
 
+__module_name__ = "_build_encoder_decoder.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages #
+# --------------- #
 import numpy as np
 import torch
 
+
+# import local dependencies #
+# ------------------------- #
 from ._utilities import _print_model
 from ._compose_multilayered_nn_sequential import _compose_multilayered_nn_sequential
 

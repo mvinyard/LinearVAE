@@ -1,4 +1,11 @@
 
+__module_name__ = "_split_train_validation_test_at_random.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages #
+# --------------- #
 import numpy as np
 
 
