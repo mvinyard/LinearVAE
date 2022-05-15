@@ -8,7 +8,7 @@ A flexible API for instantiating pytorch neural networks composed of sequential 
 
 ## Installation
 
-To install the latest distribution from PYPI:
+To install the latest distribution from [PYPI](https://pypi.org/project/flexinet/):
 
 ```BASH
 pip install flexinet
