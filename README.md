@@ -41,3 +41,8 @@ model.train(epochs=10_000, print_frequency=50, lr=1e-4)
 ```python
 model.plot_loss()
 ```
+
+## Contact
+---
+
+If you have suggestions, questions, or comments, please reach out to Michael Vinyard via [email](mailto:mvinyard@broadinstitute.org)
