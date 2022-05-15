@@ -43,6 +43,5 @@ model.plot_loss()
 ```
 
 ## Contact
----
 
 If you have suggestions, questions, or comments, please reach out to Michael Vinyard via [email](mailto:mvinyard@broadinstitute.org)
