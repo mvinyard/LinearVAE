@@ -23,7 +23,6 @@ X_data.keys()
 model = fn.models.LinearVAE(X_data,
                             latent_dim=20, 
                             hidden_layers=5, 
-                            lr=1e-4,
                             power=2,
                             dropout=0.1,
                             activation_function_dict={'LeakyReLU': LeakyReLU(negative_slope=0.01)},
