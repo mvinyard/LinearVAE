@@ -7,6 +7,22 @@ A flexible API for instantiating pytorch neural networks.
 
 <img width="400" alt="FlexiLinearAVE" src="/docs/img/flexinet.LinearVAE.svg">
 
+## Installation
+
+To install the latest distribution from PYPI:
+
+```BASH
+pip install flexinet
+```
+
+Alternatively, one can install the development version:
+
+```BASH
+git clone https://github.com/mvinyard/flexinet.git; cd flexinet;
+
+pip install -e .
+```
+
 ### Example
 
 ```python
@@ -37,6 +53,8 @@ model = fn.models.LinearVAE(X_data,
 ```python
 model.train(epochs=10_000, print_frequency=50, lr=1e-4)
 ```
+
+<img width="541" alt="from_nb.train_in_progress" src="https://user-images.githubusercontent.com/47393421/168489358-620815b0-b129-43af-8eb4-0009c46d3295.png">
 
 ```python
 model.plot_loss()
