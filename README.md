@@ -2,7 +2,26 @@
 
 A flexible API for instantiating pytorch neural networks composed of sequential linear layers ([`torch.nn.Linear`](https://pytorch.org/docs/stable/generated/torch.nn.Linear.html#torch.nn.Linear)). Additionally, makes use of other elements within the [`torch.nn`](https://pytorch.org/docs/stable/nn.html) module.
 
-## Current test implementation: vanilla linear VAE
+## Test implementation 1: Sequential linear neural network
+
+```python
+import flexinet
+
+nn = flexinet.models.NN()
+```
+
+```python
+# example
+nn = flexinet.models.compose_nn_sequential(in_dim=50,
+                                           out_dim=50,
+                                           activation_function=Tanh(),
+                                           hidden_layer_nodes={1: [500, 500], 2: [500, 500]},
+                                           dropout=True,
+                                           dropout_probability=0.1,
+                                           )
+```
+
+## Test implementation 2: vanilla linear VAE
 
 <img width="400" alt="FlexiLinearAVE" src="/docs/img/flexinet.LinearVAE.svg">
 
