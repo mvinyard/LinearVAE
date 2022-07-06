@@ -8,3 +8,6 @@ from ._LinearVAE import _LinearVAE as LinearVAE
 
 from ._compose_nn_sequential import _NeuralNetwork as NN
 from ._compose_nn_sequential import _compose_nn_sequential as compose_nn_sequential
+
+from ._autoencoder import _encoder as encoder
+from ._autoencoder import _decoder as decoder
