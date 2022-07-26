@@ -11,3 +11,5 @@ from ._compose_nn_sequential import _compose_nn_sequential as compose_nn_sequent
 
 from ._autoencoder import _encoder as encoder
 from ._autoencoder import _decoder as decoder
+
+from ._potential_net import _potential_net as potential_net
